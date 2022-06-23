@@ -200,7 +200,11 @@ input[type=button]{
 }
 .menushow {
     height: 50px;
-
+    position: fixed;
+    top: 0;
+}
+.showcontent{
+    margin-top: 50px;
 }
 
 @media (min-width: 576px) {
@@ -210,6 +214,10 @@ input[type=button]{
     .menushow {
         height: 30px;
         background-image: url("./logo.png");
+        position: relative;
+    }
+    .showcontent{
+        margin-top: 0px;
     }
 }
 
@@ -220,7 +228,12 @@ input[type=button]{
     .menushow {
         height: 30px;
         background-image: url("./logo.png");
+        position: relative;
     }
+    .showcontent{
+        margin-top: 0px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -230,6 +243,10 @@ input[type=button]{
     .menushow {
         height: 30px;
         background-image: url("./logo.png");
+        position: relative;
+    }
+    .showcontent{
+        margin-top: 0px;
     }
 }
 
@@ -237,10 +254,7 @@ input[type=button]{
     .indexshoplist {
         width: calc(100% - 5px);
     }
-    .menushow {
-        height: 30px;
-        background-image: url("./logo.png");
-    }
+
     .carlistpage .carlisttop3 {
         -webkit-box-ordinal-group: 3;
         -moz-box-ordinal-group: 3;
@@ -264,6 +278,14 @@ input[type=button]{
         -webkit-order: 1;
         order: 1;
     }
+    .menushow {
+        height: 30px;
+        background-image: url("./logo.png");
+        position: relative;
+    }
+    .showcontent{
+        margin-top: 0px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -273,7 +295,12 @@ input[type=button]{
     .menushow {
         height: 30px;
         background-image: url("./logo.png");
+        position: relative;
     }
+    .showcontent{
+        margin-top: 0px;
+    }
+
 }
 
 .indexbanner {}

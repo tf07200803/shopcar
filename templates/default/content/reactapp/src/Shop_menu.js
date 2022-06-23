@@ -225,7 +225,7 @@ const Shop_menu = (props) => {
 
 
 
-            {props.children}
+            <div className='showcontent'>{props.children}</div>
 
 
         </div>
