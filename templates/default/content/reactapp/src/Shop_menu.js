@@ -188,8 +188,9 @@ const Shop_menu = (props) => {
                         </div>:
 
                         <div className='col-auto' onClick={hisback} style={{
-                            width: '30px',
-                            height: '30px'
+                            width: '40px',
+                                height: '40px',
+                                color:'#fff'
 
                         }}>
 
@@ -204,8 +205,9 @@ const Shop_menu = (props) => {
 
 
                         <div className='col-auto' onClick={handleClickOpen} style={{
-                            width: '30px',
-                            height: '30px'
+                            width: '40px',
+                            height: '40px',
+                                color:'#fff'
 
                         }}><FontAwesomeIcon icon={fas.faAlignJustify} className='w-100 h-100' /></div>
 
