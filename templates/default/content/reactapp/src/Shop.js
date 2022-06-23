@@ -22,7 +22,7 @@ import Admin_vip_check from "./Admin_vip_check";
 
 import Admin_bannerlist from "./Admin_bannerlist";
 import Admin_banner from "./Admin_banner";
-
+import ReactLoading from 'react-loading';
 
 import Admin_imgupload from "./Admin_imgupload";
 
@@ -47,6 +47,7 @@ const Shop=()=>{
     const [admincc,adminccchange]=useState(true);
     const [admindata,admindatachange]=useState(null);
     const [order,orderchange]=useState(null);
+    const [loadcc,loadtype]=useState(false);
 
 
     Date.prototype.format = function(fmt) {
@@ -72,7 +73,7 @@ const Shop=()=>{
 
     const cookieChange=(data)=>{
         var cc=true
-        
+
 
         $.map(myArray, function(val) {
 
@@ -102,6 +103,15 @@ const Shop=()=>{
     }
 
 
+
+    const loading=(cc)=>{
+
+        loadtype(cc)
+
+    }
+
+
+
     const shopidfunction=(id)=>{
 
 
@@ -126,6 +136,7 @@ const Shop=()=>{
     const loginclick=(cc)=>{
         if(cc){
             loginchange(true)
+            regchange(false)
         }else{
             loginchange(false)
         }
@@ -135,6 +146,7 @@ const Shop=()=>{
     const regclick=(cc)=>{
         if(cc){
             regchange(true)
+            loginchange(false)
         }else{
             regchange(false)
         }
@@ -158,7 +170,7 @@ const Shop=()=>{
         bodyFormData.set('webtype', 'react');
         bodyFormData.set('dosubmit', '登录');
 
-        
+
 
         axios({
             method: 'post',
@@ -219,8 +231,12 @@ const Shop=()=>{
 
     }
     const loginoutgo=()=>{
+
+        loading(true)
         axios.get(logoutpath, {
         }).then(function (response) {
+
+            loading(false)
             var res=response.data;
             if(res.status==-1){
                 alert(res.msg)
@@ -349,17 +365,17 @@ const Shop=()=>{
     useEffect(()=>{
         if(!mounted.current){ //componentDidMount
             mounted.current=true;
-            
+
             userlogin()
 
             //checkadmindata()
 
         }
         else{ //componentDidUpdate
-            
+
             setcookie('shopdata',JSON.stringify(myArray),1)
-            console.log("yayaya")
-            console.log(jsondata)
+
+
 
         }
 
@@ -379,12 +395,12 @@ const Shop=()=>{
 
 
 
-        <Route exact path="/"  render={()=>{return( <Shop_index/> )}} />
-        <Route path="/Shop_detail" render={()=>{return( <Shop_detail _cookieChange={cookieChange} vipdata={jsondata} shoplist={myArray}/> )}}/>
-        <Route path="/Shop_carlist" render={()=>{return( <Shop_carlist shoplist={myArray} _cookieDelete={cookieDelete} _shopidfunction={shopidfunction} vipdata={jsondata} _userlogin={userlogin}/> )}}/>
-        <Route path="/Shop_check_list" render={()=>{return( <Shop_check_list _shopidfunction={shopidfunction}/> )}}/>
-        <Route path="/Shop_finish_report" render={()=>{return( <Shop_finish_report _shopidfunction={shopidfunction}/> )}}/>
-        <Route path="/Shop_order_list" render={()=>{return( <Shop_order_list _shopidfunction={shopidfunction} _userlogin={userlogin}/> )}}/>
+        <Route exact path="/"  render={()=>{return( <Shop_index _loading={loading}/> )}} />
+        <Route path="/Shop_detail" render={()=>{return( <Shop_detail _cookieChange={cookieChange} vipdata={jsondata} shoplist={myArray} _loading={loading}/> )}}/>
+        <Route path="/Shop_carlist" render={()=>{return( <Shop_carlist shoplist={myArray} _cookieDelete={cookieDelete} _shopidfunction={shopidfunction} vipdata={jsondata} _userlogin={userlogin} _loading={loading}/> )}}/>
+        <Route path="/Shop_check_list" render={()=>{return( <Shop_check_list _shopidfunction={shopidfunction} _loading={loading}/> )}}/>
+        <Route path="/Shop_finish_report" render={()=>{return( <Shop_finish_report _shopidfunction={shopidfunction} _loading={loading}/> )}}/>
+        <Route path="/Shop_order_list" render={()=>{return( <Shop_order_list _shopidfunction={shopidfunction} _userlogin={userlogin} _loading={loading}/> )}}/>
         <Route path="/Admin_login"  render={()=>{return( <Admin_login _adminlogin={adminlogin}/> )}} />
         <Route path="/Admin_index"  render={()=>{return( <Admin_index _checkadmindata={checkadmindata} /> )}} />
         <Route path="/Admin_updatalist"  render={()=>{return( <Admin_updatalist _checkadmindata={checkadmindata} _checkadminContentdata={checkadminContentdata} /> )}} />
@@ -403,16 +419,16 @@ const Shop=()=>{
     </Switch>
     </HashRouter>
 
-    
+
     { admincc ? <Shop_footer /> : null }
 
 
 
-    { logincc ? <Shop_login login={loginclick} loginsend={logingo} /> : null }
-    { regcc ? <Shop_register reg={regclick} regsend={reggo} /> : null }
+    { logincc ? <Shop_login login={loginclick} loginsend={logingo} _loading={loading}/> : null }
+    { regcc ? <Shop_register reg={regclick} regsend={reggo} _loading={loading} /> : null }
 
-        
 
+    <div className={loadcc ? 'loading':'d-none'}><ReactLoading   width={40} /></div>
     </div>
 
 

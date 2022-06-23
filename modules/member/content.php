@@ -395,7 +395,7 @@ class content extends foreground {
                 }
 
                 $datas = $this->content_db->get_one(array('id'=>$id));
-                $datas['inputtime']+=60;
+                $datas['inputtime']+=21600;
                 $time = time();
                 if($datas['inputtime']<$time){
 

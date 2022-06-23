@@ -43,7 +43,7 @@ const Shop_finish_report = (props) => {
 
        }
 
-
+       props._loading(true)
        var bodyFormData = new FormData();
        bodyFormData.set('id', jsondata.id);
        bodyFormData.set('info[catid]', 6);
@@ -61,7 +61,7 @@ const Shop_finish_report = (props) => {
            .then(function (response) {
 
 
-               console.log(response)
+               props._loading(false)
 
                var res=response.data;
 
@@ -129,11 +129,11 @@ const Shop_finish_report = (props) => {
 
     useEffect(() => {
         if (!mounted.current) { //componentDidMount
-
+            props._loading(true)
             mounted.current = true;
             axios.get('index.php?m=content&c=index&a=show&catid=6&id='+shopid, {
             }).then(function (response) {
-
+                props._loading(false)
                 var res = response.data;
                 if(res.status==-1){
                     alert(res.msg)

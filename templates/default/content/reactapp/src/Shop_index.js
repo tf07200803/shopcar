@@ -31,11 +31,11 @@ const Shop_index = (props) => {
     const [bannerid, banneridchange] = useState(0);
     const getorderlist = () => {
 
-
+        props._loading(true)
         axios.get('index.php?m=link&c=index&a=getbanner&webtype=react', {
         }).then(function (response) {
             var res = response.data;
-
+            props._loading(false)
             if (res.status == -1) {
 
             } else if (res.status == 1) {
@@ -95,11 +95,12 @@ const Shop_index = (props) => {
         if (!mounted.current) { //componentDidMount
             mounted.current = true;
 
-
+            props._loading(true)
             axios.get(apipath, {
             }).then(function (response) {
                 var res = response.data;
                 datachange(res.data[0].data)
+                props._loading(false)
                 getorderlist()
 
 

@@ -34,7 +34,7 @@ const Shop_detail = (props) => {
     const pagechange = (url) => {
 
         history.push(url);
-        
+
     }
 
     const sendcar = () => {
@@ -101,10 +101,10 @@ const Shop_detail = (props) => {
     useEffect(() => {
         if (!mounted.current) { //componentDidMount
             mounted.current = true;
-
+            props._loading(true)
             axios.get('index.php?m=content&c=index&a=show&catid=6&id=' + pageid, {
             }).then(function (response) {
-
+                props._loading(false)
                 var res = response.data;
                 //res.data.shop_color = JSON.parse(res.data.shop_color)
                 res.data.shop_detail = JSON.parse(res.data.shop_detail)
@@ -223,9 +223,9 @@ const Shop_detail = (props) => {
                                         </div>
                                         :
                                         ''
-                                        
+
                                         }
-                                            
+
                                             {/*<div className='detailshopbtn col-4 mt-5'>
                                                 <div className='detailbtnclass btncolor2 w99-5'>直接購買</div>
                                             </div>

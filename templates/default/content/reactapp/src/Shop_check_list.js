@@ -24,10 +24,10 @@ const Shop_check_list = (props) => {
     useEffect(() => {
         if (!mounted.current) { //componentDidMount
             mounted.current = true;
-            
+            props._loading(true)
             axios.get('index.php?m=content&c=index&a=show&catid=6&id='+shopid, {
             }).then(function (response) {
-
+                props._loading(false)
                 var res = response.data;
 
                 if(res.status==-1){
@@ -43,7 +43,7 @@ const Shop_check_list = (props) => {
                     datachange(res.data)
 
                 }
-                
+
 
 
 
@@ -91,7 +91,7 @@ const Shop_check_list = (props) => {
 
 
 
-                                    
+
                                     <div className='col-11 mt-3 right_carlist'>
                                     <Shop_check _jsondata={jsondata}/>
                                     </div>

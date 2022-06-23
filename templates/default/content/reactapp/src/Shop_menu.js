@@ -57,9 +57,11 @@ const Shop_menu = (props) => {
 
     const login = () => {
         props.login(true)
+        setOpen(false);
     }
     const reg = () => {
         props.reg(true)
+        setOpen(false);
     }
     const history = useHistory();
 
@@ -100,7 +102,7 @@ const Shop_menu = (props) => {
             /*if(history.location.pathname.indexOf('Admin')!=-1){
                 props._checkadmindata()
             }*/
-            console.log(fas)
+
         }
 
     }, [props, history]);

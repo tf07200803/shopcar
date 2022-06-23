@@ -52,12 +52,12 @@ const Shop_order_list = (props) => {
 
     const deleteshop = (id) => {
 
-
+        props._loading(true)
         const deletepath = 'index.php?m=member&c=content&a=delete&catid=6&id=' + id
 
         axios.get(deletepath, {
         }).then(function (response) {
-
+            props._loading(false)
             var res = response.data;
             alert(res.msg)
             if (res.status == -1) {
@@ -76,9 +76,10 @@ const Shop_order_list = (props) => {
 
 
     const loadorder = (page) => {
+        props._loading(true)
         axios.get('index.php?m=content&c=index&a=getorder&page=' + page, {
         }).then(function (response) {
-
+            props._loading(false)
             var res = response.data.data[0];
 
             //console.log(res)

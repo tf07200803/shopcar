@@ -17,7 +17,7 @@ const Shop_login=(props)=>{
     const loginClick= () =>{
 
 
-
+        props._loading(true)
         if($("#username").val()==''){
 
             alert("帳號誤為空")
@@ -35,7 +35,7 @@ const Shop_login=(props)=>{
         content.password=$("#password").val()
         content.code=$("#code").val()
         props.loginsend(content,function(msg){
-
+            props._loading(false)
             if(msg==-1){
                 changecode()
             }
@@ -45,6 +45,7 @@ const Shop_login=(props)=>{
 
 
     const logininit=()=>{
+        props._loading(true)
         var bodyFormData = new FormData();
         bodyFormData.set('webtype', 'react');
 
@@ -57,7 +58,7 @@ const Shop_login=(props)=>{
             .then(function (response) {
 
                 var res = response.data;
-
+                props._loading(false)
                 if (res.status == -1) {
 
                 } else if (res.status == 1) {

@@ -916,3 +916,20 @@ cursor: pointer;
 .paddright5{
     padding-right: 5px !important;
 }
+.loading{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+.loading>div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}

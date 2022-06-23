@@ -187,7 +187,7 @@ const Shop_carlist = (props) => {
 
         }
 
-
+        props._loading(true)
         var bodyFormData = new FormData();
 
 
@@ -220,7 +220,7 @@ const Shop_carlist = (props) => {
             .then(function (response) {
 
                 var res = response.data;
-
+                props._loading(false)
                 if (res.status == -1) {
                     alert(res.msg)
                 } else if (res.status == 1) {
@@ -245,6 +245,7 @@ const Shop_carlist = (props) => {
 
     const codecheck=()=>{
         var bodyFormData = new FormData();
+        props._loading(true)
         bodyFormData.set('dosubmit', true);
         bodyFormData.set('code', $("#code").val());
         axios({
@@ -258,7 +259,7 @@ const Shop_carlist = (props) => {
                 var res = response.data;
 
                 if (res.status == -1) {
-
+                    props._loading(false)
                     $("#code").val("")
                     alert(res.msg)
                     changecode()
@@ -289,7 +290,7 @@ const Shop_carlist = (props) => {
     const codeinit=()=>{
         var bodyFormData = new FormData();
         bodyFormData.set('webtype', 'react');
-
+        props._loading(true)
         axios({
             method: 'post',
             url: codepath,
@@ -297,7 +298,7 @@ const Shop_carlist = (props) => {
             headers: { 'Content-Type': 'multipart/form-data' }
         })
             .then(function (response) {
-
+                props._loading(false)
                 var res = response.data;
 
                 if (res.status == -1) {

@@ -10,8 +10,8 @@ const Shop_register = (props) => {
 
     const mounted = useRef();
     const [myArray, myArrayChange] = useState(props.shoplist);
-    
-    
+
+
     const apipath='https://demeter.5fpro.com/tw/zipcodes.json'
     const [addArray, addArraychange] = useState([]);
     const [city_name, city_name_change] = useState('plz');
@@ -30,6 +30,8 @@ const Shop_register = (props) => {
 
     }
     const codeinit=()=>{
+
+        props._loading(true)
         var bodyFormData = new FormData();
         bodyFormData.set('webtype', 'react');
 
@@ -42,7 +44,7 @@ const Shop_register = (props) => {
             .then(function (response) {
 
                 var res = response.data;
-
+                props._loading(false)
                 if (res.status == -1) {
 
                 } else if (res.status == 1) {
@@ -80,23 +82,23 @@ const Shop_register = (props) => {
         }else if($("#tel").val()==''){
             alert("電話誤為空")
             return;
-            
+
         }else if($("#password").val()==''){
             alert("密碼誤為空")
             return;
-            
+
         }else if($("#password").val()!=$("#checkpassword").val()){
             alert("請在確認密碼")
             return;
-            
+
         }else if(contury_name=='' || contury_name=='plz'){
             alert("鄉鎮市誤為空")
             return;
-            
+
         }else if($("#address").val()==''){
             alert("請詳細填寫訂購人地址")
             return;
-            
+
         }
 
 
@@ -112,15 +114,16 @@ const Shop_register = (props) => {
         content.address=$("#address").val()
         content.code=$("#code").val()
         content.finishaddress=addressdata[contury_name].zipcode+'-'+addressdata[contury_name].full_name+'-'+$("#address").val()
+        props._loading(true)
         props.regsend(content,function(msg){
-
+            props._loading(false)
             if(msg==-1){
                 changecode()
             }
 
         })
 
-        
+
     }
 
 
@@ -133,23 +136,23 @@ const Shop_register = (props) => {
             axios.get(apipath, {
             }).then(function (response) {
                 var res=response.data;
-            
+
                 addressdatachange(res)
                 var array=[]
                 for(var i=0;i<res.length;i++){
-                    
+
                     if($.inArray( res[i].city_name, array )==-1){
                         array.push(res[i].city_name)
                     }
                 }
                 addArraychange(array)
-                
+
 
             }).catch(function (err) {
-                
+
                 console.log(err);
             });
-            
+
             codeinit()
 
 
@@ -261,7 +264,7 @@ const Shop_register = (props) => {
 
                                             <div className='row'>
 
-                                                
+
 
 
                                                 <div className='col-2'>
@@ -279,7 +282,7 @@ const Shop_register = (props) => {
                                                                     <div className='w-100'>地區</div>
                                                                     <select id="dist" name="contact" className='w-95' defaultValue={contury_name} onChange={(e)=>{ contury_name_change(e.target.value) }}>
                                                                     <option value="plz">請選擇</option>
-                                                                    
+
 
                                                                     {Object.entries(addressdata).map((t, k) => t[1].city_name==city_name ? <option key={k} value={k}>{t[1].name}</option>:'')}
 
@@ -305,7 +308,7 @@ const Shop_register = (props) => {
 
                                     <div className='row mt-0 mt-lg-3'>
 
-                                        
+
 
 
                                         <div className='col-lg-6 col-12'>
