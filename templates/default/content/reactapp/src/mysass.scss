@@ -1,0 +1,891 @@
+$myColor: blue;
+$publicback:#ececec;
+$publictxtcolor:#4c4c4c;
+$black:#000;
+$green:#76bb9f;
+$green2:#a4b662;
+$green3:#297a59;
+$pink:#fc6363;
+$yellow:#f1f2b1;
+$coffee:#a78366;
+$red:#db7c7c;
+
+.page-item.active .page-link{
+    color:$pink !important;
+}
+body,
+html {
+    font-size: 13px;
+}
+
+h1 {
+    color: $myColor;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.row a {
+    display: contents;
+    text-decoration: none;
+}
+
+/*input[type=text] {
+  border: none;
+  box-sizing: border-box;
+  background-color: $yellow;
+  margin-left: 5px;
+}
+input[type=password] {
+  border: none;
+  box-sizing: border-box;
+  background-color: $yellow;
+  margin-left: 5px;
+}
+input[type=button]{
+  background-color: $pink;
+  color:#fff;
+  border: none;
+  border-radius: 10px;
+}*/
+.fullimg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.menushow {
+    background-color: $green;
+
+
+
+
+    /*background-image: url("./logo.png");*/
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 15px center;
+    position: relative;
+    z-index: 99;
+    ul{
+        float: right;
+        line-height: 30px;
+    }
+
+    li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #fff;
+    }
+    li.buttomtype{
+        cursor: pointer;
+    }
+
+    li:hover{
+        color:yellow;
+    }
+}
+
+.indexshoplist {
+    background-color: #ddf5eb;
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.indextop {
+
+
+
+    .indexshoplist li {
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #fff;
+
+        a {
+            text-decoration: none;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $publictxtcolor;
+            padding-left: 10px;
+        }
+
+
+
+    }
+
+    li:last-child {
+        border-bottom: none;
+        height: 60px;
+        line-height: 60px;
+    }
+    .indexshoplist li.target{
+        background-color: #fff;
+    }
+    .indexshoplist li:not(.target):hover{
+        background-color: #bde3d3;
+    }
+}
+
+.detailtop {
+
+}
+
+.shoplisttop {
+
+    margin-bottom: 30px;
+}
+
+.indexlist .indexshopStyle>.indexshopbody {
+
+
+    margin-left: 5px;
+}
+
+.indexlist .indexshopStyle:not(:nth-child(4n-3))>.indexshopbody {
+
+    /*margin-left: 5px;*/
+}
+
+.indexlist .indexshopStyle>.indexshopbody>.indexshopimg {
+    height: 148px;
+}
+
+
+.carlistpage .carlisttop3 {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+}
+.testbtn{
+    position: absolute;
+}
+
+.carlistpage .carlisttop2 {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+}
+
+.carlistpage .carlisttop1 {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+.menushow {
+    height: 50px;
+
+}
+
+@media (min-width: 576px) {
+    .indexshoplist {
+        width: 100%;
+    }
+    .menushow {
+        height: 30px;
+        background-image: url("./logo.png");
+    }
+}
+
+@media (min-width: 768px) {
+    .indexshoplist {
+        width: 100%;
+    }
+    .menushow {
+        height: 30px;
+        background-image: url("./logo.png");
+    }
+}
+
+@media (min-width: 992px) {
+    .indexshoplist {
+        width: 100%;
+    }
+    .menushow {
+        height: 30px;
+        background-image: url("./logo.png");
+    }
+}
+
+@media (min-width: 1200px) {
+    .indexshoplist {
+        width: calc(100% - 5px);
+    }
+    .menushow {
+        height: 30px;
+        background-image: url("./logo.png");
+    }
+    .carlistpage .carlisttop3 {
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 3;
+        -webkit-order: 3;
+        order: 3;
+    }
+
+    .carlistpage .carlisttop2 {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .carlistpage .carlisttop1 {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+}
+
+@media (min-width: 1400px) {
+    .indexshoplist {
+        width: calc(100% - 5px);
+    }
+    .menushow {
+        height: 30px;
+        background-image: url("./logo.png");
+    }
+}
+
+.indexbanner {}
+
+.indexbanner>img {
+    width: 100%;
+
+}
+
+.webwidth {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.indexlist {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.indexshopbody {
+
+    border: 1px solid $green;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.indexshopbody:hover{
+
+    .indexshopimg{
+
+        filter: brightness(1.2);
+    }
+
+    .indexshoptext{
+        color:$green3;
+    }
+
+}
+
+
+.indexshopimg {
+    filter: brightness(1);
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    transition: all 0.2s ease;
+
+}
+
+.indexshoptext {
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
+    color: $publictxtcolor;
+    overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+}
+
+.indexshopprice {
+    text-align: right;
+    font-size: 16px;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 0;
+    color: $pink;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    background-color: $green;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.showmsg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.msgcenterview {
+
+    display: inline-block;
+    background-color: #fff;
+
+
+
+}
+
+.msgTitle {
+    color: #fff;
+    background-color: $green;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+
+}
+
+.msgclose {
+    float: right;
+    margin-right: 10px;
+}
+
+.msgDetail {
+    padding: 20px;
+    color: $publictxtcolor;
+    word-wrap:break-word;
+}
+
+.detailshoptitle {
+    font-size: 18px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.shopcarlisttitle {
+    font-size: 18px;
+}
+
+.detailright {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.detailshopspecial ul {
+    list-style: disc;
+    list-style-position: inside;
+
+}
+
+.detailshopprice {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+
+
+}
+
+.priceClass {
+    font-size: 18px;
+    color: $red;
+    font-weight: bold;
+}
+
+.detailshopnumber {}
+
+.detailshopbtn {
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.detailbtnclass {
+
+
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.inforshopbtn {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+
+}
+
+.inforbtnclass {
+
+
+    font-size: 13px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.btncolor1 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb266+0,fc6363+100 */
+    background: #ffb266; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffb266 0%, #fc6363 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffb266 0%,#fc6363 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffb266 0%,#fc6363 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb266', endColorstr='#fc6363',GradientType=0 ); /* IE6-9 */
+    border:1px solid #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.btncolor1:hover{
+    color:$pink;
+    border:1px solid $pink;
+    background: #fff;
+}
+
+.btncolor3 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb266+0,a78366+100 */
+    background: #ffb266; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffb266 0%, #a78366 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffb266 0%,#a78366 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffb266 0%,#a78366 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb266', endColorstr='#a78366',GradientType=0 ); /* IE6-9 */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.btncolor3:hover{
+    color:#a78366;
+    border:1px solid #a78366;
+    background: #fff;
+}
+
+
+.btncolor2 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#61cc0a+0,669807+100 */
+    background: #61cc0a; /* Old browsers */
+    background: -moz-linear-gradient(top, #61cc0a 0%, #669807 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #61cc0a 0%,#669807 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #61cc0a 0%,#669807 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61cc0a', endColorstr='#669807',GradientType=0 ); /* IE6-9 */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.btncolor2:hover{
+    color:#669807;
+    border:1px solid #669807;
+    background: #fff;
+}
+
+.textcolor1{
+    color:$pink;
+}
+
+.detailtexttitle {
+    margin-top: 30px !important;
+    padding: 20px !important;
+    border-top: 1px $green dashed;
+}
+
+.shopliststyle {
+    border: 1px solid $green;
+    padding: 15px !important;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 15px !important;
+}
+
+.shoplistptnum {
+    padding-left: 15px !important;
+}
+
+.carlistclose {
+    color: $green;
+    float: right;
+    font-size: 18px;
+    line-height: 0;
+}
+
+.left_carlist {
+
+    .left_carlist_title {
+        height: 30px;
+        line-height: 30px;
+        background-color: $green;
+        color: #fff;
+        text-align: center;
+    }
+
+    .left_carlist_top {
+        table tr td {
+            border-bottom: 1px solid $publicback;
+            padding: 5px;
+        }
+
+        table tr:last-child td {
+            border-bottom: none;
+        }
+
+        table tr td:first-child {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        table tr td:last-child {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        border: 1px solid $publicback;
+    }
+
+    .lasttd {
+
+        table tr:last-child td:last-child {
+            color: $pink;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.right_carlist {
+
+    .right_carlist_title {
+        height: 30px;
+        line-height: 30px;
+        background-color: $green;
+        color: #fff;
+        text-align: center;
+    }
+
+    .greenborder {
+        border: 1px solid $green;
+    }
+
+    .right_content {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .right_content_title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+.shoplisttop,
+.msgcenterview {
+    input[type=text] {
+        border: none;
+        box-sizing: border-box;
+        background-color: $yellow;
+        height: 25px;
+        ;
+
+    }
+    input[type=number] {
+        border: none;
+        box-sizing: border-box;
+        background-color: $yellow;
+        height: 25px;
+        ;
+
+    }
+    input[type=email] {
+        border: none;
+        box-sizing: border-box;
+        background-color: $yellow;
+        height: 25px;
+        ;
+
+    }
+
+    input[type=date] {
+      border: none;
+      box-sizing: border-box;
+      background-color: $yellow;
+      height: 25px;
+      ;
+
+  }
+
+
+    input[type=password] {
+        border: none;
+        box-sizing: border-box;
+        background-color: $yellow;
+        height: 25px;
+        ;
+
+    }
+
+    select {
+        border: none;
+        box-sizing: border-box;
+        background-color: $yellow;
+        height: 25px;
+        ;
+
+    }
+
+    input[type=radio] {
+        border: none;
+        box-sizing: border-box;
+        background-color: $yellow;
+        margin-left: 5px;
+    }
+
+    input[type=radio] {
+        display: none;
+    }
+
+    input[type=radio]+label {}
+
+    input[type=radio]+label span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -1px 2px 0 5px;
+        vertical-align: middle;
+        background: url(./icon/check_radio_sheet2.png) -38px top no-repeat;
+        cursor: pointer;
+    }
+
+    input[type=radio]:checked+label span {
+        background: url(./icon/check_radio_sheet2.png) -57px top no-repeat;
+    }
+}
+
+.checklisttable .checklisthsop {
+    border-bottom: 1px solid $publicback;
+
+    &:last-child {
+        border: none;
+    }
+
+}
+
+.pinkcolor {
+    color: $pink;
+}
+
+.finishicon {
+    color: $pink;
+}
+.finish_report_table{
+  width: 100%;
+}
+.finish_report_table td {
+    padding: 5px;
+}
+.finish_report_table tr td:first-child{
+  text-align: right;
+}
+.w99-5{
+    width: calc( 100% - 5px );
+}
+
+.detailtop input[type=number] {
+
+}
+.detailtop select {
+
+ }
+.shoplistptnum input[type=number] {
+
+ }
+.shoplistptnum select {
+
+ }
+ .size16{
+     font-size: 16px;
+ }
+
+ .ordertitle{
+
+     border-bottom: 1px solid #ececec;
+ }
+ .ordertdstyle table td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ .orderlink{
+     text-decoration: underline;
+ }
+ .tdpadding10 td{
+     padding: 10px;
+ }
+
+ .adminbg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.showmsg_login {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.vh-50{
+    height: 50vh !important;
+}
+.adminindexmenu{
+
+    height: 45vh !important;
+}
+.adminubdexmenuinside{
+    background-color: #fff;
+    width: calc( 100% - 4px );
+    height: calc( 100% - 4px );
+    color:$green3;
+
+}
+.width100-4{
+    width: calc( 100% - 8px ) !important;
+}
+
+.adminIndexFontSize{
+    font-size: calc(50px + 1vw);
+}
+.adminIndexIconSize{
+    font-size: calc(16px + 1vw);
+
+}
+.admincentertable{
+
+}
+.editorStateClass{
+    /*border: 1px solid #000;
+    height: 300px;;*/
+    position: relative;
+}
+.rdw-editor-main{
+    height: auto !important;
+}
+.orderlistbtn{
+    background-color: #848484;
+    color:#fff;
+}
+.orderlistbtn.target{
+    background-color: #fff;
+    color:#848484;
+}
+.topbottomline{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.pagenumber{
+    padding: 5px;
+    display: inline-block;
+cursor: pointer;
+}
+.pagenumber.target{
+    background-color: $green3;
+    color:#fff;
+}
+#setimg{
+    overflow: auto;
+}
+#setimg>canvas{
+
+    -webkit-transform-origin:0% 0%;
+	transform-origin:0% 0%;
+}
+.width100-130{
+    width: calc( 100% - 85px );
+}
+.codebg{
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 100% 0px;
+}
+.w-95{
+    width: calc( 100% - 5px );
+}
+.paddright5{
+    padding-right: 5px !important;
+}
