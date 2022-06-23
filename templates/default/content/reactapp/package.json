@@ -103,7 +103,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
-  "homepage": "./phpcms/templates/default/content/reactapp/build/",
+  "homepage": "./phpcms/templates/default/content/reactapp/tommy/",
   "eslintConfig": {
     "extends": [
       "react-app",

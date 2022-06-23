@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.6b863ad7.chunk.css",
+    "main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.57a5e7f7.chunk.js",
+    "main.css.map": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.6b863ad7.chunk.css.map",
+    "main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.57a5e7f7.chunk.js.map",
+    "runtime-main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/runtime-main.1c81a00e.js",
+    "runtime-main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/runtime-main.1c81a00e.js.map",
+    "static/css/2.9f8ff124.chunk.css": "./phpcms/templates/default/content/reactapp/tommy/static/css/2.9f8ff124.chunk.css",
+    "static/js/2.d8db1d86.chunk.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/2.d8db1d86.chunk.js",
+    "static/css/2.9f8ff124.chunk.css.map": "./phpcms/templates/default/content/reactapp/tommy/static/css/2.9f8ff124.chunk.css.map",
+    "static/js/2.d8db1d86.chunk.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/2.d8db1d86.chunk.js.map",
+    "static/js/3.7b84a5e8.chunk.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/3.7b84a5e8.chunk.js",
+    "static/js/3.7b84a5e8.chunk.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/3.7b84a5e8.chunk.js.map",
+    "../../index.html": "./phpcms/templates/default/content/reactapp/tommy/../../index.html",
+    "static/media/01.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/01.bc1e92e6.jpg",
+    "static/media/02.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/02.86f8755b.jpg",
+    "static/media/03.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/03.00b6cb61.jpg",
+    "static/media/04.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/04.275c45b2.jpg",
+    "static/media/05.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/05.93d923b2.jpg",
+    "static/media/6663794_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/6663794_R.ba274640.jpg",
+    "static/media/6809582_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/6809582_R.cb304178.jpg",
+    "static/media/7902065_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/7902065_R.c9cfff66.jpg",
+    "static/media/8741988_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/8741988_R.c9a6cd93.jpg",
+    "static/media/8911926_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/8911926_R.30a1f9cc.jpg",
+    "static/media/8990597_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/8990597_R.59f55d78.jpg",
+    "static/media/9143638_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/9143638_R.594b7304.jpg",
+    "static/media/9190540_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/9190540_R.1af23923.jpg",
+    "static/media/9210687_R.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/9210687_R.c42c4d2e.jpg",
+    "static/media/AT0120210922248382.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/AT0120210922248382.ca6beec5.jpg",
+    "static/media/AT0120210922248384.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/AT0120210922248384.44fca969.jpg",
+    "static/media/AT0120210922248386.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/AT0120210922248386.72906b3e.jpg",
+    "static/media/logo.6ce24c58.svg": "./phpcms/templates/default/content/reactapp/tommy/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c81a00e.js",
+    "static/css/2.9f8ff124.chunk.css",
+    "static/js/2.d8db1d86.chunk.js",
+    "static/css/main.6b863ad7.chunk.css",
+    "static/js/main.57a5e7f7.chunk.js"
+  ]
+}
