@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.fd88f5b5.chunk.css",
-    "main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.faa67aff.chunk.js",
-    "main.css.map": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.fd88f5b5.chunk.css.map",
-    "main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.faa67aff.chunk.js.map",
-    "runtime-main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/runtime-main.1c81a00e.js",
-    "runtime-main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/runtime-main.1c81a00e.js.map",
+    "main.css": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.c60d5863.chunk.css",
+    "main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.efdc5711.chunk.js",
+    "main.css.map": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.c60d5863.chunk.css.map",
+    "main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.efdc5711.chunk.js.map",
+    "runtime-main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/runtime-main.371c8905.js",
+    "runtime-main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/runtime-main.371c8905.js.map",
     "static/css/2.9f8ff124.chunk.css": "./phpcms/templates/default/content/reactapp/tommy/static/css/2.9f8ff124.chunk.css",
-    "static/js/2.d8db1d86.chunk.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/2.d8db1d86.chunk.js",
+    "static/js/2.a82bec4a.chunk.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/2.a82bec4a.chunk.js",
     "static/css/2.9f8ff124.chunk.css.map": "./phpcms/templates/default/content/reactapp/tommy/static/css/2.9f8ff124.chunk.css.map",
-    "static/js/2.d8db1d86.chunk.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/2.d8db1d86.chunk.js.map",
-    "static/js/3.7b84a5e8.chunk.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/3.7b84a5e8.chunk.js",
-    "static/js/3.7b84a5e8.chunk.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/3.7b84a5e8.chunk.js.map",
+    "static/js/2.a82bec4a.chunk.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/2.a82bec4a.chunk.js.map",
+    "static/js/3.ed583cd9.chunk.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/3.ed583cd9.chunk.js",
+    "static/js/3.ed583cd9.chunk.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/3.ed583cd9.chunk.js.map",
     "../../index.html": "./phpcms/templates/default/content/reactapp/tommy/../../index.html",
     "static/media/01.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/01.bc1e92e6.jpg",
     "static/media/02.jpg": "./phpcms/templates/default/content/reactapp/tommy/static/media/02.86f8755b.jpg",
@@ -33,10 +33,10 @@
     "static/media/logo.6ce24c58.svg": "./phpcms/templates/default/content/reactapp/tommy/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1c81a00e.js",
+    "static/js/runtime-main.371c8905.js",
     "static/css/2.9f8ff124.chunk.css",
-    "static/js/2.d8db1d86.chunk.js",
-    "static/css/main.fd88f5b5.chunk.css",
-    "static/js/main.faa67aff.chunk.js"
+    "static/js/2.a82bec4a.chunk.js",
+    "static/css/main.c60d5863.chunk.css",
+    "static/js/main.efdc5711.chunk.js"
   ]
 }
