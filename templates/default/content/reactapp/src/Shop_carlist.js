@@ -322,6 +322,9 @@ const Shop_carlist = (props) => {
 
     useEffect(() => {
         if (!mounted.current) { //componentDidMount
+
+
+            console.log(props.vipdata)
             mounted.current = true;
 
             axios.get(apipath, {
@@ -364,7 +367,7 @@ const Shop_carlist = (props) => {
                 contury_name_change2(contury_name)
 
             }
-            console.log(myArray)
+            
             //console.log(addressdata)
 
         }
@@ -373,7 +376,7 @@ const Shop_carlist = (props) => {
     return (
 
         <div>
-            {addressdata === null || props.vipdata === null ? "" :
+            {addressdata === null || props.vipdata === null || addArray=== null ? "" :
                 <div className='webwidth'>
                     <div className='shoplisttop carlistpage mt-3'>
                         <div className="row justify-content-center px-0 py-0 mx-0 my-0">
@@ -595,6 +598,9 @@ const Shop_carlist = (props) => {
                                                         <div className='col-lg-6 col-12'>
                                                             {city_name=='plz' ? city_name_change(props.vipdata.cityname):''}
                                                             {contury_name=='plz' ? contury_name_change(props.vipdata.conturyname):''}
+
+                                                            {city_name=='plz' || contury_name=='plz' ? '':
+                                                            
                                                             <div className='row'>
 
                                                                 <div className='col-2'>
@@ -603,14 +609,14 @@ const Shop_carlist = (props) => {
                                                                 </div>
                                                                 <div className='col-4'>
                                                                     <div className='w-100'>縣市</div>
-                                                                    <select id="city" name="contact" className='w-95' defaultValue={city_name} onChange={(e) => { city_name_change(e.target.value) }}>
+                                                                    <select id="city" name="contact" className='w-95' value={city_name} onChange={(e) => { city_name_change(e.target.value) }}>
                                                                         <option value="plz">請選擇</option>
                                                                         {Object.entries(addArray).map((t, k) => <option key={k} value={t[1]}>{t[1]}</option>)}
                                                                     </select>
                                                                 </div>
                                                                 <div className='col-5'>
                                                                     <div className='w-100'>地區</div>
-                                                                    <select id="dist" name="contact" className='w-95' defaultValue={contury_name} onChange={(e) => { contury_name_change(e.target.value) }}>
+                                                                    <select id="dist" name="contact" className='w-95' value={contury_name} onChange={(e) => { contury_name_change(e.target.value) }}>
                                                                         <option value="plz">請選擇</option>
 
 
@@ -620,6 +626,8 @@ const Shop_carlist = (props) => {
                                                                 </div>
 
                                                             </div>
+                                                            }
+                                                            
 
 
 
@@ -691,7 +699,7 @@ const Shop_carlist = (props) => {
 
                                                                 <div className='col-2'>
                                                                     <div className='w-100'>區號</div>
-                                                                    <input type='text' className="w-95" defaultValue={contury_name2 != 'plz' ? addressdata[contury_name2].zipcode : ''} readOnly />
+                                                                    <input type='text' className="w-95" value={contury_name2 != 'plz' ? addressdata[contury_name2].zipcode : ''} readOnly />
                                                                 </div>
                                                                 <div className='col-4'>
                                                                     <div className='w-100'>縣市</div>

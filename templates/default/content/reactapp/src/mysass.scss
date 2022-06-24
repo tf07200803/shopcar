@@ -774,16 +774,16 @@ input[type=button]{
 }
 
 .detailtop input[type=number] {
-
+    width: 100px;
 }
 .detailtop select {
-
+    width: 100px;
  }
 .shoplistptnum input[type=number] {
-
+    width: 100px;
  }
 .shoplistptnum select {
-
+    width: 100px;
  }
  .size16{
      font-size: 16px;
@@ -932,4 +932,8 @@ cursor: pointer;
     top: 0;
     bottom: 0;
     margin: auto;
+}
+.mobilecentertitle{
+    color:#fff;
+    font-size: 16px;
 }

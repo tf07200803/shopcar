@@ -133,8 +133,8 @@ const Shop_menu = (props) => {
                         {props.vipdata ? null : <ListItem button className='buttomtype' onClick={() => reg()}><ListItemText primary='註冊' /></ListItem>}
 
 
-                        {props.vipdata ? <ListItem button className='buttomtype' onClick={() => pagechange('/Shop_order_list')}><ListItemText primary='訂單追蹤' />{props.vipdata.order[0].data.length > 0 ? '(' + props.vipdata.order[0].data.length + ')' : ''}</ListItem> : null}
-                        {props.vipdata ? <ListItem button className='buttomtype' onClick={() => { props.shoplist.length > 0 ? pagechange('/Shop_carlist') : showmsg('購物車為空') }}><ListItemText primary='購物車' />{props.shoplist.length > 0 ? '(' + props.shoplist.length + ')' : ''}</ListItem> : null}
+                        {props.vipdata ? <ListItem button className='buttomtype' onClick={() => pagechange('/Shop_order_list')}><ListItemText primary={props.vipdata.order[0].data.length > 0 ? '訂單追蹤 (' + props.vipdata.order[0].data.length + ')' : '訂單追蹤'} /></ListItem> : null}
+                        {props.vipdata ? <ListItem button className='buttomtype' onClick={() => { props.shoplist.length > 0 ? pagechange('/Shop_carlist') : showmsg('購物車為空') }}><ListItemText primary={props.shoplist.length > 0 ? '購物車 (' + props.shoplist.length + ')' : '購物車'} /></ListItem> : null}
 
                         <ListItem button className='buttomtype' onClick={() => pagechange('/')}><ListItemText primary='回首頁' /></ListItem>
 
@@ -177,7 +177,7 @@ const Shop_menu = (props) => {
                     </ul>
 
 
-                    <div className="menubtn d-flex d-lg-none d-xl-none d-md-none d-sm-none row align-items-center h-100 justify-content-between me-3 ms-3 px-0 py-0 mx-0 my-0">
+                    <div className="menubtn d-flex d-lg-none d-xl-none d-md-none d-sm-none row align-items-center h-100 justify-content-between  px-0 py-0 mx-0 my-0">
 
                     {history.location.pathname=='/' ? <div className='col-auto' style={{
                             width: '30px',
@@ -202,8 +202,13 @@ const Shop_menu = (props) => {
                         }
 
 
+{props.vipdata ? <div className='col-auto mobilecentertitle'>
 
+{props.vipdata.nickname} 您好
 
+</div>:''
+                        
+}
 
 
                         <div className='col-auto' onClick={handleClickOpen} style={{

@@ -217,7 +217,7 @@ const Shop_detail = (props) => {
                                             <div className='detailshopbtn col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 mt-5'>
                                                 <div className='detailbtnclass btncolor1 w99-5' onClick={() => sendcar()}> <FontAwesomeIcon icon={fas.faCartPlus} className='me-2' />放入購物車</div>
                                             </div>
-                                            {props.shoplist.length>0 ?
+                                            {props.shoplist.length>0 && props.vipdata ?
                                             <div className='detailshopbtn col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 mt-2 mt-sm-5'>
                                             <div className='detailbtnclass btncolor2 w99-5' onClick={() => pagechange('/Shop_carlist')}> <FontAwesomeIcon icon={fas.faCartArrowDown} className='me-2' />購物車內容</div>
                                         </div>
