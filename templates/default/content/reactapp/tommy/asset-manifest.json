@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.c60d5863.chunk.css",
-    "main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.efdc5711.chunk.js",
-    "main.css.map": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.c60d5863.chunk.css.map",
-    "main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.efdc5711.chunk.js.map",
+    "main.css": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.550b0d99.chunk.css",
+    "main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.f09601c0.chunk.js",
+    "main.css.map": "./phpcms/templates/default/content/reactapp/tommy/static/css/main.550b0d99.chunk.css.map",
+    "main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/main.f09601c0.chunk.js.map",
     "runtime-main.js": "./phpcms/templates/default/content/reactapp/tommy/static/js/runtime-main.371c8905.js",
     "runtime-main.js.map": "./phpcms/templates/default/content/reactapp/tommy/static/js/runtime-main.371c8905.js.map",
     "static/css/2.9f8ff124.chunk.css": "./phpcms/templates/default/content/reactapp/tommy/static/css/2.9f8ff124.chunk.css",
@@ -36,7 +36,7 @@
     "static/js/runtime-main.371c8905.js",
     "static/css/2.9f8ff124.chunk.css",
     "static/js/2.a82bec4a.chunk.js",
-    "static/css/main.c60d5863.chunk.css",
-    "static/js/main.efdc5711.chunk.js"
+    "static/css/main.550b0d99.chunk.css",
+    "static/js/main.f09601c0.chunk.js"
   ]
 }
